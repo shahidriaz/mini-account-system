@@ -4,6 +4,10 @@ import { mongoose } from 'mongoose';
 
 // Import the Charts of Accounts router
 import Accountsrouter from './routers/chartOfAccounts.routers.js';
+// Import the Charts of Customer router
+import CustomerRouter from './routers/customer.routers.js';
+// Import the Charts of Suppliier router
+import SupplierRouter from './routers/supplier.routers.js';
 
 dotenv.config() // this will read the file and will place the values in the process.env
 const port = process.env.PORT
@@ -32,8 +36,15 @@ db.once("open", function(){
 const app = express();
 app.use(demoMiddleware);
 
-// Mount the custom route
+// Mount the route for Charts of Accounts
 app.use('/accounts/', Accountsrouter);
+
+// Mount the route for Customer
+app.use('/customer/', CustomerRouter);
+
+// Mount the route for Supplier
+app.use('/supplier/', SupplierRouter);
+
 app.listen(port,()=>{
     console.log(`Server is listening on Port: ${port}`)
 })
