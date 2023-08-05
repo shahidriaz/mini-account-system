@@ -45,7 +45,7 @@ const updateChartOfAccount = async (req, res) => {
 };
 // Method to delete a chart of Account record [Document] from the Chart-Of-Accounts Table [Collection]
 const deleteCharOfAccount = async(req,res) =>{
-    const {chartOfAccountId} = req.params;
+    const chartOfAccountId = req.params.id;
     const deletedChartOfAccount = await chartsOfAccounts.findByIdAndDelete(chartOfAccountId);
     if (!deletedChartOfAccount) {
       return res.status(404).json({ message: 'Account not found' });

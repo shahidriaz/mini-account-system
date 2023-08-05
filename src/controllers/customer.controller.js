@@ -45,7 +45,7 @@ const updateCustomer = async (req, res) => {
 };
 // Method to delete a chart of Account record [Document] from the Chart-Of-Accounts Table [Collection]
 const deleteCustomer = async(req,res) =>{
-    const {customerId} = req.params.id;
+    const customerId = req.params.id;
     console.log(req)
     const deletedCustomer = await Customer.findByIdAndDelete(customerId);
     if (!deletedCustomer) {

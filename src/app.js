@@ -4,10 +4,12 @@ import { mongoose } from 'mongoose';
 
 // Import the Charts of Accounts router
 import Accountsrouter from './routers/chartOfAccounts.routers.js';
-// Import the Charts of Customer router
+// Import the Customer router
 import CustomerRouter from './routers/customer.routers.js';
-// Import the Charts of Suppliier router
+// Import the Supplier router
 import SupplierRouter from './routers/supplier.routers.js';
+// Import the Product
+import Productrouter from './routers/produc.routers.js';
 
 dotenv.config() // this will read the file and will place the values in the process.env
 const port = process.env.PORT
@@ -21,7 +23,7 @@ const demoMiddleware = (req,res,next)=>{
 //#endregion
 
 //#region Connect with MongoDB
-mongoose.connect("mongodb://localhost:32768/Account-System", {
+mongoose.connect("mongodb://localhost:27017/Account-System", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 });
@@ -35,7 +37,6 @@ db.once("open", function(){
 
 const app = express();
 app.use(demoMiddleware);
-
 // Mount the route for Charts of Accounts
 app.use('/accounts/', Accountsrouter);
 
@@ -44,6 +45,9 @@ app.use('/customer/', CustomerRouter);
 
 // Mount the route for Supplier
 app.use('/supplier/', SupplierRouter);
+// Mount the route for Product
+app.use('/product/', Productrouter);
+
 
 app.listen(port,()=>{
     console.log(`Server is listening on Port: ${port}`)
