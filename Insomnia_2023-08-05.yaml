@@ -1,0 +1,568 @@
+_type: export
+__export_format: 4
+__export_date: 2023-08-05T18:01:34.065Z
+__export_source: insomnia.desktop.app:v2023.4.0
+resources:
+  - _id: req_676d0b0814884dab897f1b904c0264e2
+    parentId: fld_b237650205f64f0fbaba2fac98bd2028
+    modified: 1691254389176
+    created: 1689972636036
+    url: http://localhost:8089/accounts/
+    name: Get All Charts of Accounts
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1690613505539
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_b237650205f64f0fbaba2fac98bd2028
+    parentId: wrk_ac2eedf2e21c4946af7556ad033b9c4b
+    modified: 1691254375042
+    created: 1691254375042
+    name: Chart of Accounts
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1691254375042
+    _type: request_group
+  - _id: wrk_ac2eedf2e21c4946af7556ad033b9c4b
+    parentId: null
+    modified: 1691257683934
+    created: 1689794520472
+    name: mini-account-system
+    description: ""
+    scope: collection
+    _type: workspace
+  - _id: req_526ce12923d544c1b17b209818735be5
+    parentId: fld_b237650205f64f0fbaba2fac98bd2028
+    modified: 1691254396795
+    created: 1689973683278
+    url: http://localhost:8089/accounts/64c80273b0d71846a6d2f69d
+    name: Get Charts of Account By ID
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1690613505489
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_406634f5c97943278eff8a2ef516c2dd
+    parentId: fld_b237650205f64f0fbaba2fac98bd2028
+    modified: 1691254473604
+    created: 1689972714636
+    url: http://localhost:8089/accounts/
+    name: Create Chart of Accounts
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "code": "4000",
+          "name": "Sales",
+          "type": "Revenue"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1690613505439
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_dc31c41e01f94e49b8c72f0a0dc4a99d
+    parentId: fld_b237650205f64f0fbaba2fac98bd2028
+    modified: 1691254479474
+    created: 1689973849936
+    url: http://localhost:8089/accounts/64baf39446c6199b0ac01d51
+    name: Update Chart of Accounts
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"code": "3000",
+        	"name": "Common Stock",
+        	"type": "Equity"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1690613505389
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_6810b410e3ad41c8aef26b2649e4878f
+    parentId: fld_2abe8309c44347128b9a24d90cab4011
+    modified: 1691254494821
+    created: 1691081593164
+    url: http://localhost:8089/customer/
+    name: Get All Customers
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1689972635886
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_2abe8309c44347128b9a24d90cab4011
+    parentId: wrk_ac2eedf2e21c4946af7556ad033b9c4b
+    modified: 1691254540762
+    created: 1691254489512
+    name: Customer
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1691254374992
+    _type: request_group
+  - _id: req_9517f864954242a4afd241291205c68e
+    parentId: fld_2abe8309c44347128b9a24d90cab4011
+    modified: 1691254506124
+    created: 1691081741190
+    url: http://localhost:8089/customer/64cbdb4f73631dae6029dd35
+    name: Get Customer By ID
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1689972635836
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_d8105c9d2ec9402e82102551eae7d700
+    parentId: fld_2abe8309c44347128b9a24d90cab4011
+    modified: 1691254512841
+    created: 1691081320590
+    url: http://localhost:8089/customer/
+    name: Create Customer
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "firstName": "Shahid",
+          "lastName": "",
+          "email": "",
+        	"addressLine1": "",
+        	"addressLine2": "",
+        	"postalCode":""
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1689972635786
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_86dda56940de412baafe8cbb4d893945
+    parentId: fld_2abe8309c44347128b9a24d90cab4011
+    modified: 1691254516198
+    created: 1691081570929
+    url: http://localhost:8089/customer/64cbdb4f73631dae6029dd35
+    name: Update Customer
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "firstName": "Shahid Riaz",
+          "lastName": "Bhatti",
+          "email": "hello@shahid.com",
+        	"addressLine1": "",
+        	"addressLine2": "",
+        	"postalCode":""
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1689972635736
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_7b7387a01f414195818519deae19c6d0
+    parentId: fld_2abe8309c44347128b9a24d90cab4011
+    modified: 1691257371963
+    created: 1691081901773
+    url: http://localhost:8089/customer/64cbdb4f73631dae6029dd35
+    name: Delete Customer
+    description: ""
+    method: DELETE
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1689972635686
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_25acfd69e2c3421dbc102a88609de9c5
+    parentId: fld_c68bd67569064ad2b538475da723dbb2
+    modified: 1691254669608
+    created: 1691254556400
+    url: http://localhost:8089/supplier/
+    name: Get All Supplier
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1689972635886
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_c68bd67569064ad2b538475da723dbb2
+    parentId: wrk_ac2eedf2e21c4946af7556ad033b9c4b
+    modified: 1691254556393
+    created: 1691254556393
+    name: Supplier
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1691254374942
+    _type: request_group
+  - _id: req_0859b158ed25425fae0d92da7e51d0b5
+    parentId: fld_c68bd67569064ad2b538475da723dbb2
+    modified: 1691254703514
+    created: 1691254556402
+    url: http://localhost:8089/supplier/64ce7f78e6060d93f735aa10
+    name: Get Supplier By ID
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1689972635836
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_b5abdcc023294d3c936e430106e77728
+    parentId: fld_c68bd67569064ad2b538475da723dbb2
+    modified: 1691254718988
+    created: 1691254556395
+    url: http://localhost:8089/supplier/
+    name: Create Supplier
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "firstName": "Shahid Riaz",
+          "lastName": "Bhatti",
+          "email": "shahid@supplier.com",
+        	"addressLine1": "This is my business address",
+        	"addressLine2": "",
+        	"postalCode":"54300"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1689972635786
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_a161bebbf3b74a25b38e5e65e0c043dd
+    parentId: fld_c68bd67569064ad2b538475da723dbb2
+    modified: 1691254981688
+    created: 1691254556398
+    url: http://localhost:8089/supplier/64ce7f78e6060d93f735aa10
+    name: Update Supplier
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "firstName": "Shahid Riaz",
+          "lastName": "Bhatti",
+          "email": "shahid@supplier.com",
+        	"addressLine1": "This is my business address",
+        	"addressLine2": "second address line",
+        	"postalCode":"54300"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1689972635736
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_d2d8d2252504405a8382ad7fbf17a996
+    parentId: fld_c68bd67569064ad2b538475da723dbb2
+    modified: 1691257377171
+    created: 1691254556404
+    url: http://localhost:8089/supplier/64ce7f78e6060d93f735aa10
+    name: Delete Supplier
+    description: ""
+    method: DELETE
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1689972635686
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_bd80e3cfbfeb4fcc911f453379df9b99
+    parentId: fld_785fe4b680a34c11a533812ef659b118
+    modified: 1691255697357
+    created: 1691255339250
+    url: http://localhost:8089/product/
+    name: Get All Products
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1689972635886
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_785fe4b680a34c11a533812ef659b118
+    parentId: wrk_ac2eedf2e21c4946af7556ad033b9c4b
+    modified: 1691255339240
+    created: 1691255339240
+    name: Product
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1691254374892
+    _type: request_group
+  - _id: req_70339225e50142218ebbfcf66c73031e
+    parentId: fld_785fe4b680a34c11a533812ef659b118
+    modified: 1691257214079
+    created: 1691255339259
+    url: http://localhost:8089/product/64ce8773238911d3e6ab5fa4
+    name: Get Product By ID
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1689972635836
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_f1b15a6e9aa949c0a78f0a78077fdfb3
+    parentId: fld_785fe4b680a34c11a533812ef659b118
+    modified: 1691256515680
+    created: 1691255339242
+    url: http://localhost:8089/product/
+    name: Create Product
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"productName":"Mac Book",
+        	"unitPrice":350000,
+        	"quantityInHand":1,
+        	"supplierId":"64ce860544f5a643159adda6"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1689972635786
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_0cecd1ee7a534345ae13204c3147a282
+    parentId: fld_785fe4b680a34c11a533812ef659b118
+    modified: 1691257335148
+    created: 1691255339245
+    url: http://localhost:8089/product/64ce8773238911d3e6ab5fa4
+    name: Update Product
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"productName":"Mac Book",
+        	"unitPrice":350000,
+        	"quantityInHand":200,
+        	"supplierId":"64ce860544f5a643159adda6"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1689972635736
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_8f8dcfa877ae4ecf816f983a6b9596dc
+    parentId: fld_785fe4b680a34c11a533812ef659b118
+    modified: 1691257356270
+    created: 1691255339262
+    url: http://localhost:8089/product/64ce8773238911d3e6ab5fa4
+    name: Delete Product
+    description: ""
+    method: DELETE
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1689972635686
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_aae0ab7614b8e5e50ae17f0e16491a0ece98a192
+    parentId: wrk_ac2eedf2e21c4946af7556ad033b9c4b
+    modified: 1689794520480
+    created: 1689794520480
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1689794520480
+    _type: environment
+  - _id: jar_aae0ab7614b8e5e50ae17f0e16491a0ece98a192
+    parentId: wrk_ac2eedf2e21c4946af7556ad033b9c4b
+    modified: 1689794520482
+    created: 1689794520482
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
